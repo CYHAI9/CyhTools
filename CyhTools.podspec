@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CyhTools"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "Deal with things more simply"
 
   # This description is used to generate tags and improve search results.
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   s.source_files  = "cyhToolsmanager/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "cyhToolsmanager/cyhTools.h"
+  s.public_header_files = "cyhToolsmanager/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
