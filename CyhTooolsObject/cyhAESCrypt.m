@@ -8,10 +8,6 @@
 
 #import "cyhAESCrypt.h"
 
-#import "NSData+CommonCrypto.h"
-#import "NSData+Base64.h"
-#import "NSString+Base64.h"
-
 @implementation cyhAESCrypt
 
 + (NSString *)encrypt:(NSString *)message password:(NSString *)password {
