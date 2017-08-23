@@ -1,14 +1,17 @@
 
-
+#import <Foundation/Foundation.h>
 #import <Foundation/NSData.h>
+#import <CommonCrypto/CommonCryptor.h>
 #import <Foundation/NSError.h>
 #import <CommonCrypto/CommonHMAC.h>
-#import <CommonCrypto/CommonCryptor.h>
+#import <CommonCrypto/CommonDigest.h>
 
 extern NSString * const kCommonCryptoErrorDomain;
 
 @interface NSError (CommonCryptoErrorDomain)
+
 + (NSError *) errorWithCCCryptorStatus: (CCCryptorStatus) status;
+
 @end
 
 @interface NSData (CommonDigest)
