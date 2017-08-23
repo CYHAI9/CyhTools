@@ -8,11 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3210FFD21F4C2BCF00EE4A92 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210FFBD1F4C2BCF00EE4A92 /* GTMBase64.m */; };
-		3210FFD31F4C2BCF00EE4A92 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210FFC01F4C2BCF00EE4A92 /* NSData+Base64.m */; };
-		3210FFD41F4C2BCF00EE4A92 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210FFC21F4C2BCF00EE4A92 /* NSData+CommonCrypto.m */; };
-		3210FFD51F4C2BCF00EE4A92 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210FFC41F4C2BCF00EE4A92 /* NSString+Base64.m */; };
 		3210FFD61F4C2BCF00EE4A92 /* NSString+encryptBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210FFC61F4C2BCF00EE4A92 /* NSString+encryptBox.m */; };
-		3210FFD71F4C2BCF00EE4A92 /* cyhAESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210FFC81F4C2BCF00EE4A92 /* cyhAESCrypt.m */; };
 		3210FFD81F4C2BCF00EE4A92 /* Cyhkeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210FFCA1F4C2BCF00EE4A92 /* Cyhkeychain.m */; };
 		3210FFD91F4C2BCF00EE4A92 /* UIImage+Save.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210FFCD1F4C2BCF00EE4A92 /* UIImage+Save.m */; };
 		3210FFDA1F4C2BCF00EE4A92 /* UITextField+CyhTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3210FFCF1F4C2BCF00EE4A92 /* UITextField+CyhTools.m */; };
@@ -31,16 +27,8 @@
 		3210FFBC1F4C2BCF00EE4A92 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		3210FFBD1F4C2BCF00EE4A92 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		3210FFBE1F4C2BCF00EE4A92 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		3210FFBF1F4C2BCF00EE4A92 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		3210FFC01F4C2BCF00EE4A92 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		3210FFC11F4C2BCF00EE4A92 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
-		3210FFC21F4C2BCF00EE4A92 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
-		3210FFC31F4C2BCF00EE4A92 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		3210FFC41F4C2BCF00EE4A92 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		3210FFC51F4C2BCF00EE4A92 /* NSString+encryptBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+encryptBox.h"; sourceTree = "<group>"; };
 		3210FFC61F4C2BCF00EE4A92 /* NSString+encryptBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+encryptBox.m"; sourceTree = "<group>"; };
-		3210FFC71F4C2BCF00EE4A92 /* cyhAESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cyhAESCrypt.h; sourceTree = "<group>"; };
-		3210FFC81F4C2BCF00EE4A92 /* cyhAESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cyhAESCrypt.m; sourceTree = "<group>"; };
 		3210FFC91F4C2BCF00EE4A92 /* Cyhkeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cyhkeychain.h; sourceTree = "<group>"; };
 		3210FFCA1F4C2BCF00EE4A92 /* Cyhkeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cyhkeychain.m; sourceTree = "<group>"; };
 		3210FFCB1F4C2BCF00EE4A92 /* cyhTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cyhTools.h; sourceTree = "<group>"; };
@@ -81,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				3210FFBB1F4C2BCF00EE4A92 /* AESCrypt */,
-				3210FFC71F4C2BCF00EE4A92 /* cyhAESCrypt.h */,
-				3210FFC81F4C2BCF00EE4A92 /* cyhAESCrypt.m */,
 				3210FFC91F4C2BCF00EE4A92 /* Cyhkeychain.h */,
 				3210FFCA1F4C2BCF00EE4A92 /* Cyhkeychain.m */,
 				3210FFCB1F4C2BCF00EE4A92 /* cyhTools.h */,
@@ -102,12 +88,6 @@
 				3210FFBC1F4C2BCF00EE4A92 /* GTMBase64.h */,
 				3210FFBD1F4C2BCF00EE4A92 /* GTMBase64.m */,
 				3210FFBE1F4C2BCF00EE4A92 /* GTMDefines.h */,
-				3210FFBF1F4C2BCF00EE4A92 /* NSData+Base64.h */,
-				3210FFC01F4C2BCF00EE4A92 /* NSData+Base64.m */,
-				3210FFC11F4C2BCF00EE4A92 /* NSData+CommonCrypto.h */,
-				3210FFC21F4C2BCF00EE4A92 /* NSData+CommonCrypto.m */,
-				3210FFC31F4C2BCF00EE4A92 /* NSString+Base64.h */,
-				3210FFC41F4C2BCF00EE4A92 /* NSString+Base64.m */,
 				3210FFC51F4C2BCF00EE4A92 /* NSString+encryptBox.h */,
 				3210FFC61F4C2BCF00EE4A92 /* NSString+encryptBox.m */,
 			);
@@ -242,12 +222,8 @@
 				3210FFDA1F4C2BCF00EE4A92 /* UITextField+CyhTools.m in Sources */,
 				32A0E82A1F4ACCB100B89242 /* ViewController.m in Sources */,
 				3210FFD21F4C2BCF00EE4A92 /* GTMBase64.m in Sources */,
-				3210FFD71F4C2BCF00EE4A92 /* cyhAESCrypt.m in Sources */,
 				32A0E8271F4ACCB100B89242 /* AppDelegate.m in Sources */,
-				3210FFD51F4C2BCF00EE4A92 /* NSString+Base64.m in Sources */,
 				32A0E8241F4ACCB100B89242 /* main.m in Sources */,
-				3210FFD31F4C2BCF00EE4A92 /* NSData+Base64.m in Sources */,
-				3210FFD41F4C2BCF00EE4A92 /* NSData+CommonCrypto.m in Sources */,
 				3210FFDB1F4C2BCF00EE4A92 /* UITools.m in Sources */,
 				3210FFD61F4C2BCF00EE4A92 /* NSString+encryptBox.m in Sources */,
 				3210FFD81F4C2BCF00EE4A92 /* Cyhkeychain.m in Sources */,
