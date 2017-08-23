@@ -80,8 +80,10 @@ pod 'CyhTools'
     _Himageview.image = [UIImage GetImageWith_ImageNameOrUrlstringsandox:@"save01" imageSourceType:ImageFromTypeLocation CompelWithImage:^(UIImage *_image) {
         
     }]
+    
 网络读取
-    _NimageView.image = [UIImage GetImageWith_ImageNameOrUrlstringsandox:urlstring imageSourceType:ImageFromTypeNetwork CompelWithImage:^(UIImage *_image) {
+   
+    _NimageView.image = [UIImage GetImageWith_ImageNameOrUrlstringsandox:urlstring imageSourceType:ImageFromTypeNetwork CompelWithImage:^(UIImage *_image) {
         
     }];
  
