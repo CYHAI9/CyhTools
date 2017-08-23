@@ -71,6 +71,7 @@ pod 'CyhTools'
         
      }]; 
    
+
 7.图片缓存
 
      [UIImage SaveImageWithHomeDirectory_image:[UIImage imageNamed:@"to3.jpg"] Name:@"save01" SaveImageType:ImageTyJPG CompelWithpath:^(NSString *savePath, NSString *imagename) {
