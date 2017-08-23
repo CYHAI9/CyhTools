@@ -7,9 +7,11 @@ pod 'CyhTools'
 
     [Cyhkeychain save_key:@"key" data_values:@"钥匙串信息，请打开capabilities中的钥匙串"];
 
-    NSLog(@"钥匙串保存信息：%@",[Cyhkeychain load_key:@"key"]);
+    NSLog(@"钥匙串保存信息：%@",
+    [Cyhkeychain load_key:@"key"]);
     //    [Cyhkeychain delete_key:@"key"];
-    NSLog(@"手机标识信息：%@",[Cyhkeychain getUUID]);
+    NSLog(@"手机标识信息：%@",
+    [Cyhkeychain getUUID]);
     
 2.AES/ECB加密
 
@@ -27,11 +29,20 @@ pod 'CyhTools'
 
 4.设备信息
  
-     NSLog(@"手机别名：%@\n手机系统版本：%@\n 地方型号（国际化区域名称）：%@\n设备名称：%@\n设备当前网络IP：%@\n",[Cyhkeychain userPhoneName],[Cyhkeychain phoneVersion],[Cyhkeychain localPhoneModel],[Cyhkeychain deviceName],[Cyhkeychain getIPAddress:YES]); 
+     NSLog(@"手机别名：%@\n手机系统版本：%@\n 地方型号（国际化区域名称）：%@\n设备名称：%@\n设备当前网络IP：%@\n",
+     [Cyhkeychain userPhoneName],
+     [Cyhkeychain phoneVersion],
+     [Cyhkeychain localPhoneModel],
+     [Cyhkeychain deviceName],
+     [Cyhkeychain getIPAddress:YES]); 
      
 5.app信息
    
-    NSLog(@"App当前名字：%@\nAPP当前版本号：%@\nAPP当前构建版本号：%@\n当前设备型号：%@\n",[Cyhkeychain appCurName],[Cyhkeychain appCurVersion],[Cyhkeychain appCurVersionNum],[Cyhkeychain iOSplatform]);
+     NSLog(@"App当前名字：%@\nAPP当前版本号：%@\nAPP当前构建版本号：%@\n当前设备型号：%@\n",
+     [Cyhkeychain appCurName],
+     [Cyhkeychain appCurVersion],
+     [Cyhkeychain appCurVersionNum],
+     [Cyhkeychain iOSplatform]);
     
     [[Cyhkeychain getAllphoneNumList] enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSLog(@"通讯录:%@==%@",[obj objectForKey:@"name"],[obj objectForKey:@"phonenum"]);
@@ -50,7 +61,7 @@ pod 'CyhTools'
      }];
    
     
-     [self.textVw setKeyboardButton:^(UITools *Tool) {
+     [self.textVw setKeyboardButton:^(UITools *Tool) {
         Tool.buttonTitle(@"完成");
         Tool.buttonTitlecolor([UIColor whiteColor]);
         Tool.buttonBGcolor([UIColor orangeColor]);
