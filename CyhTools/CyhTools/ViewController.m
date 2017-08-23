@@ -51,10 +51,10 @@
 
 - (IBAction)MD5_SHA:(id)sender {
 //    
-//    NSString * md5string = [@"md5String" md5];
-//    NSString * shaString = [@"ShaString" SHA1];
-//    
-//    NSLog(@"MD5加密：%@==SHA加密：%@",md5string,shaString);
+    NSString * md5string = [@"md5String" md5];
+    NSString * shaString = [@"ShaString" SHA1];
+    
+    NSLog(@"MD5加密：%@==SHA加密：%@",md5string,shaString);
 }
 
 - (IBAction)DeviceMessage:(id)sender {

@@ -10,7 +10,7 @@
 
 #import "Cyhkeychain.h"
 #import "UIImage+Save.h"
-//#import "NSString+encryptBox.h"
+#import "NSString+encryptBox.h"
 //#import "cyhAESCrypt.h"
 #import "UITextField+CyhTools.h"
 
