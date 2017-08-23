@@ -70,7 +70,19 @@ pod 'CyhTools'
         NSLog(@"注销textview响应");
         
      }]; 
-   
+   
+7.图片缓存
+
+     [UIImage SaveImageWithHomeDirectory_image:[UIImage imageNamed:@"to3.jpg"] Name:@"save01" SaveImageType:ImageTyJPG CompelWithpath:^(NSString *savePath, NSString *imagename) {
+        NSLog(@"保存路径：\n%@",savePath);
+    }];
+    _Himageview.image = [UIImage GetImageWith_ImageNameOrUrlstringsandox:@"save01" imageSourceType:ImageFromTypeLocation CompelWithImage:^(UIImage *_image) {
+        
+    }]
+网络读取
+    _NimageView.image = [UIImage GetImageWith_ImageNameOrUrlstringsandox:urlstring imageSourceType:ImageFromTypeNetwork CompelWithImage:^(UIImage *_image) {
+        
+    }];
  
  
    
