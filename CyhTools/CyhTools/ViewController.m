@@ -34,19 +34,19 @@
 
 - (IBAction)AesEn:(id)sender {
     
-//    NSString * AESencrypt = [cyhAESCrypt encrypt:@"encryptString" password:@"123456"];
-//    NSString * AESdecrypt = [cyhAESCrypt decrypt:AESencrypt password:@"123456"];
-//    
-//    NSLog(@"Aes加密字符串：%@==Aes解密字符串：%@",AESencrypt,AESdecrypt);
+    NSString * AESencrypt = [cyhAESCrypt encrypt:@"encryptString" password:@"123456"];
+    NSString * AESdecrypt = [cyhAESCrypt decrypt:AESencrypt password:@"123456"];
+    
+    NSLog(@"Aes加密字符串：%@==Aes解密字符串：%@",AESencrypt,AESdecrypt);
     
 }
 
 - (IBAction)ECBen:(id)sender {
     
-//    NSData * ECBencrypt = [cyhAESCrypt encryptText:@"encryptString" key:@"123456"];
-//    NSString * ECBdecrypt = [cyhAESCrypt decryptText:ECBencrypt key:@"123456"];
-//    NSString * ecbEnstring = [NSString stringByEncodingData:ECBencrypt];
-//    NSLog(@"ECB加密字符串：%@==ECB解密字符串：%@",ecbEnstring,ECBdecrypt);
+    NSData * ECBencrypt = [cyhAESCrypt encryptText:@"encryptString" key:@"123456"];
+    NSString * ECBdecrypt = [cyhAESCrypt decryptText:ECBencrypt key:@"123456"];
+    NSString * ecbEnstring = [NSString stringByEncodingData:ECBencrypt];
+    NSLog(@"ECB加密字符串：%@==ECB解密字符串：%@",ecbEnstring,ECBdecrypt);
 }
 
 - (IBAction)MD5_SHA:(id)sender {
