@@ -131,9 +131,9 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
+#
 
-s.xcconfig = { 'OTHER_LDFLAGS' => '$(inherited)','CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => true
-    }
+s.xcconfig = { 'OTHER_LDFLAGS' => '$(inherited)','CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => true}
   # s.dependency "JSONKit", "~> 1.4"
 
 end
