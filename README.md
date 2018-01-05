@@ -35,7 +35,7 @@ pod 'CyhTools'
      [Cyhkeychain localPhoneModel],
      [Cyhkeychain deviceName],
      [Cyhkeychain getIPAddress:YES]); 
- ```    
+ ```
 5.app信息
  ```  
      NSLog(@"App当前名字：%@\nAPP当前版本号：%@\nAPP当前构建版本号：%@\n当前设备型号：%@\n",
