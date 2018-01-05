@@ -54,7 +54,7 @@ pod 'CyhTools'
  ```
  
  6.textfield/textView键盘“完成”键
-   ``` 
+ ```
      self.textTF.placeholder = @"textfield";
      [self.textTF setKeyboardButton:^(UITools *Tool) {
         Tool.buttonTitle(@"完成");
@@ -64,8 +64,6 @@ pod 'CyhTools'
       } Compel:^(BOOL finish) {
         NSLog(@"注销响应");
      }];
-   
-    
      [self.textVw setKeyboardButton:^(UITools *Tool) {
         Tool.buttonTitle(@"完成");
         Tool.buttonTitlecolor([UIColor whiteColor]);
@@ -75,10 +73,10 @@ pod 'CyhTools'
         NSLog(@"注销textview响应");
         
      }]; 
-   
 ```
 
 7.图片缓存
+
 ```
      [UIImage SaveImageWithHomeDirectory_image:[UIImage imageNamed:@"to3.jpg"] Name:@"save01" SaveImageType:ImageTyJPG CompelWithpath:^(NSString *savePath, NSString *imagename) {
         NSLog(@"保存路径：\n%@",savePath);
