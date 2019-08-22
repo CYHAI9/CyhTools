@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CyhTools"
-  s.version      = "1.3.8"
+  s.version      = "1.3.9"
   s.summary      = "Deal with things more simply"
 
   # This description is used to generate tags and improve search results.
@@ -63,8 +63,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-    s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+# s.platform     = :ios
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -90,9 +90,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "cyhToolsmanager/*.{h,m}"
+  #s.source_files  = "cyhToolsmanager/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
-
+   s.vendored_frameworks = "lib/CyhTool.framework"
 # s.public_header_files = "cyhToolsmanager/*.h"
 
 
@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
 
 #
 
-s.xcconfig = { 'OTHER_LDFLAGS' => '$(inherited)','CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => true}
+   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
   # s.dependency "JSONKit", "~> 1.4"
 
 end

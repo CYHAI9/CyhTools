@@ -1,0 +1,6 @@
+framework module CyhTool {
+  umbrella header "CyhTool.h"
+
+  export *
+  module * { export * }
+}
