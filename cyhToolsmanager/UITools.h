@@ -10,7 +10,8 @@
 #import <UIKit/UIKit.h>
 @interface UITools : NSObject
 
-@property (nonatomic , strong)UIButton * keybutton;
+@property (nonatomic , strong)UIBarButtonItem * keybutton;
+@property (nonatomic , strong)UIButton * button;
 
 - (void(^)(NSString *))buttonTitle;
 - (void(^)(UIColor *))buttonTitlecolor;

@@ -9,19 +9,29 @@
 #import "UITools.h"
 @implementation UITools
 
-- (UIButton *)keybutton
+- (UIBarButtonItem *)keybutton
 {
     if (!_keybutton) {
-        _keybutton = [[UIButton alloc] init];
+        _keybutton = [[UIBarButtonItem alloc] initWithCustomView:self.button];
 //        _keybutton.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 60, 5,50, 30);
     }
     return _keybutton;
 }
 
+- (UIButton *)button
+{
+    if (!_button) {
+        _button = [[UIButton alloc] init];
+        //        _keybutton.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 60, 5,50, 30);
+    }
+    return _button;
+}
+
+
 - (void (^)(NSString *))buttonTitle
 {
     return ^(NSString * btntext){
-        [self.keybutton setTitle:btntext forState:UIControlStateNormal];
+        [self.button setTitle:btntext forState:UIControlStateNormal];
     };
 }
 
@@ -29,7 +39,7 @@
 {
     return ^(CGFloat font){
         
-        self.keybutton.titleLabel.font = [UIFont systemFontOfSize:font];
+        self.button.titleLabel.font = [UIFont systemFontOfSize:font];
     };
     
 }
@@ -37,14 +47,14 @@
 - (void (^)(UIColor *))buttonTitlecolor
 {
     return ^(UIColor * color){
-        [self.keybutton setTitleColor:color forState:UIControlStateNormal];
+        [self.button setTitleColor:color forState:UIControlStateNormal];
     };
 }
 
 - (void (^)(UIColor *))buttonBGcolor
 {
     return ^(UIColor * color){
-        self.keybutton.backgroundColor = color;
+        self.button.backgroundColor = color;
     };
 }
 

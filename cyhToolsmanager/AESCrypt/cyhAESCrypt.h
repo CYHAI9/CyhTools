@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "NSString+Base64.h"
-#import "NSData+Base64.h"
-#import "NSData+CommonCrypto.h"
 
 @interface cyhAESCrypt : NSObject
 /**

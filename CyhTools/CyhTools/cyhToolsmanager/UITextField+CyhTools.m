@@ -35,12 +35,14 @@ static const char * key = "keyboar";
     UIToolbar *bar = [[UIToolbar alloc] initWithFrame:CGRectMake(0,0, [UIScreen mainScreen].bounds.size.width,40)];
   
    // [self.keybutton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    [bar addSubview:Tools.keybutton];
-    [UITools addlayout:Tools.keybutton];
+    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    
+    [bar setItems:@[space,Tools.keybutton]];
+//    [UITools addlayout:Tools.keybutton];
 
     self.inputAccessoryView = bar;
     
-    [Tools.keybutton addTarget:self action:@selector(bacKKeyBBtnBlicked:) forControlEvents:UIControlEventTouchUpInside];
+    [Tools.button addTarget:self action:@selector(bacKKeyBBtnBlicked:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)bacKKeyBBtnBlicked:(UIButton *)btn
@@ -81,10 +83,13 @@ static const char * key = "keyboar";
     UIToolbar *bar = [[UIToolbar alloc] initWithFrame:CGRectMake(0,0, [UIScreen mainScreen].bounds.size.width,40)];
 //    Tools.keybutton.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 60, 5,50, 30);
     // [self.keybutton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    [bar addSubview:Tools.keybutton];
-    [UITools addlayout:Tools.keybutton];
+    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+
+    [bar setItems:@[space,Tools.keybutton]];
+
+//    [UITools addlayout:Tools.keybutton];
     self.inputAccessoryView = bar;
-    [Tools.keybutton addTarget:self action:@selector(bacKKeyBBtnBlicked:) forControlEvents:UIControlEventTouchUpInside];
+    [Tools.button addTarget:self action:@selector(bacKKeyBBtnBlicked:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)bacKKeyBBtnBlicked:(UIButton *)btn
