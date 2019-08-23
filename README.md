@@ -1,5 +1,5 @@
 # CyhTools
-keychain保存，APP与设备信息，图片缓存
+keychain保存，APP与设备信息，图片缓存，MD5加密，SHA加密，base64加密，AES加解密
 
 pod 'CyhTools'
 
